@@ -8,7 +8,8 @@
         {
             "name": "dc_cmd-linux-x86.zip",
             "platform": "linux",
-            "archive": true,
+			"archive": true,
+			"includes": ["pawno/include"],
             "plugins": ["plugins/dc_cmd.so"]
         },
         {
@@ -18,5 +19,8 @@
 			"includes": ["pawno/include"],
             "plugins": ["plugins/dc_cmd.dll"]
         }
-    ]
+	],
+	"runtime": {
+        "plugins": ["WaylandProject/dc_cmd"]
+    }
 }
