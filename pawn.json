@@ -1,0 +1,22 @@
+{
+	"user": "WaylandProject",
+	"repo": "dc_cmd",
+	"entry": "test/test.pwn",
+	"output": "test/test.amx",
+	"dependencies": ["sampctl/pawn-stdlib"],
+	"resources": [
+        {
+            "name": "dc_cmd-linux-x86.zip",
+            "platform": "linux",
+            "archive": true,
+            "plugins": ["plugins/dc_cmd.so"]
+        },
+        {
+            "name": "dc_cmd-windows-x86.zip",
+            "platform": "windows",
+			"archive": true,
+			"includes": ["pawno/include"],
+            "plugins": ["plugins/dc_cmd.dll"]
+        }
+    ]
+}
